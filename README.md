@@ -1,3 +1,5 @@
-"# Drums" 
+# Drums  project
 
-https://alena2020.github.io/Drums/
+## Technologies:
+
+## Demo: https://alena2020.github.io/Drums/
