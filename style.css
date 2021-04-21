@@ -1,0 +1,157 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+  font-family: "Bubblegum Sans", cursive;
+  color: lime;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.drums {
+  position: relative;
+  height: 400px;
+  width: 600px;
+}
+
+.kick,
+.snare,
+.tom-1,
+.tom-2,
+.tom-3 {
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 45px midnightblue inset,
+    5px 5px 15px aqua, 0 0 20px mediumorchid, 0 0 50px midnightblue inset;
+  border: 1px solid midnightblue;
+  background: lime;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: midnightblue;
+  text-shadow: 2px 2px 2px white;
+  font-size: 30px;
+}
+
+.hi-hat,
+.hi-hat::before,
+.crash,
+.crash::before {
+  background: blueviolet;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, 0 0 10px midnightblue inset,
+    5px 5px 15px aqua, 0 0 20px mediumorchid, 0 0 2px midnightblue inset;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px midnightblue;
+  font-size: 15px;
+}
+
+.kick {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-width: 20px 15px 0 2px;
+  bottom: 0;
+  left: calc(50% - 100px);
+  position: absolute;
+  z-index: 3;
+}
+
+.snare {
+  height: 50px;
+  width: 150px;
+  border-radius: 20%;
+  border-width: 9px 1px 2px 7px;
+  top: 220px;
+  right: 100px;
+  position: absolute;
+}
+
+.hi-hat {
+  height: 10px;
+  width: 80px;
+  border-radius: 15px;
+  top: 180px;
+  right: 40px;
+  position: absolute;
+}
+
+.hi-hat::before {
+  content: "h";
+  display: block;
+  height: 225px;
+  width: 6px;
+  background: inherit;
+  top: -5px;
+  left: 42px;
+  position: absolute;
+}
+
+.tom-1 {
+  height: 90px;
+  width: 80px;
+  border-radius: 25%;
+  border-width: 10px 1px 2px 20px;
+  top: 100px;
+  right: 190px;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+
+.tom-2 {
+  height: 110px;
+  width: 100px;
+  border-radius: 25%;
+  border-width: 10px 10px 2px 2px;
+  top: 100px;
+  left: 180px;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.tom-3 {
+  height: 140px;
+  width: 120px;
+  border-radius: 25%;
+  border-width: 10px 10px 2px 2px;
+  top: 200px;
+  left: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+.crash {
+  height: 10px;
+  width: 170px;
+  border-radius: 20px 20px 0 0;
+  top: 50px;
+  left: 60px;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.crash::before {
+  content: "c";
+  display: block;
+  height: 180px;
+  width: 6px;
+  background: inherit;
+  top: -5px;
+  left: 82px;
+  position: absolute;
+}
+
+.hit {
+  background: lemonchiffon;
+  box-shadow: 5px 5px 15px magenta, 0 0 20px mediumvioletred, 0 0 60px red inset,
+    5px 5px 15px magenta, 0 0 20px mediumblue, 0 0 60px lemonchiffon inset,
+    15px 15px 25px magenta, 0 0 20px lawngreen;
+  border: lightskyblue;
+}
